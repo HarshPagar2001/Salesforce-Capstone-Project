@@ -46,14 +46,14 @@ These relationships enable full visibility of who bought which vehicle, from whi
 
 For user-friendly navigation, **custom tabs** were created for:
 
+- Dashboards
 - `Vehicle`
 - `Vehicle Dealer`
 - `Vehicle Customer`
 - `Vehicle Order`
 - `Vehicle Test Drive`
 - `Vehicle Service Request`
-- Reports (optional)
-- Dashboards (optional)
+- Reports
 
 All tabs were added to a custom Lightning App called **"WhatNext Vision Motors"**.
 
@@ -95,8 +95,9 @@ All flows were built **declaratively (no code)** in Flow Builder.
 - Schedules the batch job to run **daily at 12:00 AM**
 
 ## apex
-String cronExp = '0 0 0 * * ?';
-System.schedule('Daily Vehicle Order Processing', cronExp, new VehicleOrderBatchScheduler());
+- DashboardsString cronExp = '0 0 0 * * ?';
+- System.schedule('Daily Vehicle Order Processing', cronExp, new
+- VehicleOrderBatchScheduler());
 
 ---
 

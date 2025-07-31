@@ -21,22 +21,22 @@ WhatNext Vision Motors wanted a solution to:
 
 ### Custom Objects Created:
 
-`Vehicle__c` | Stores details about each car (Model, Stock, Price, Status)
-`Vehicle_Dealer__c` | Represents dealer location, contact info, and dealer codes
-`Vehicle_Customer__c` | Captures customer info and preferences
-`Vehicle_Order__c` | Tracks customer orders for vehicles
-`Vehicle_Test_Drive__c` | Manages test drive scheduling
-`Vehicle_Service_Request__c` | Tracks vehicle maintenance requests from customers
+- `Vehicle__c` | Stores details about each car (Model, Stock, Price, Status)
+- `Vehicle_Dealer__c` | Represents dealer location, contact info, and dealer codes
+- `Vehicle_Customer__c` | Captures customer info and preferences
+- `Vehicle_Order__c` | Tracks customer orders for vehicles
+- `Vehicle_Test_Drive__c` | Manages test drive scheduling
+- `Vehicle_Service_Request__c` | Tracks vehicle maintenance requests from customers
 
 ### Relationships Between Objects:
 
-Vehicle_Order → Vehicle | Lookup Relationship
-Vehicle_Order → Customer | Lookup Relationship
-Vehicle_Order → Dealer | Lookup Relationship
-Test Drive → Vehicle | Lookup Relationship
-Test Drive → Customer | Lookup Relationship
-Service Request → Vehicle | Lookup Relationship
-Service Request → Customer | Lookup Relationship
+- Vehicle_Order → Vehicle | Lookup Relationship
+- Vehicle_Order → Customer | Lookup Relationship
+- Vehicle_Order → Dealer | Lookup Relationship
+- Test Drive → Vehicle | Lookup Relationship
+- Test Drive → Customer | Lookup Relationship
+- Service Request → Vehicle | Lookup Relationship
+- Service Request → Customer | Lookup Relationship
 
 These relationships enable full visibility of who bought which vehicle, from which dealer, and when service or test drives occurred.
 
